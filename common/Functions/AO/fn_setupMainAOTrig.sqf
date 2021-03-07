@@ -13,7 +13,7 @@ waitUntil { sleep 10;  (count list mainMissionTreshold) < 9;};
 _AOMarker setMarkerAlpha 0.25;
 _AOMarker setMarkerColor "colorGreen";
 
-//TODO Task Complete
+[format["%1-main",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
 
 sleep 10;
 {

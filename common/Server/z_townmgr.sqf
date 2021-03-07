@@ -8,7 +8,7 @@ _mapConfig = (configfile >> "CfgWorlds" >> worldName >> "Names");
 
   if(!(_name in blacklistLocations)) then {
     if(!(_text in ['Hill','VegetationFir'])) then {_pos = nearestBuilding _pos;};
-    _towns = _towns + [[_text,_pos]];
+    _towns = _towns + [[_text,_pos, _name]];
   }else{
     diag_log "Location Blacklisted";
     diag_log _name;
@@ -107,6 +107,7 @@ _towns = _towns;
     _m setMarkerShape "ELLIPSE";
     _m setMarkerBrush "Solid";
     _m setMarkerAlpha 0.2;
+    _m setMarkerText (_x select 2);
 } forEach _towns;
 
 

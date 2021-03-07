@@ -8,4 +8,5 @@ takenTowns = [];
 ["Initialize"] call BIS_fnc_dynamicGroups;
 addMissionEventHandler ["HandleDisconnect",{deleteMarker format["%1",(_this select 2)]; deletevehicle (_this select 0)}];
 waitUntil {ztowninit==1};
+sleep 10;
 [] call IA_fnc_newMainAO;

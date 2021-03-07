@@ -209,7 +209,7 @@ outlw_MR_populateMagListBox =
 
 
 		((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl 1500) lbadd _text;
-		((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl 1500) lbSetPicture [_n, format ["outlw_magRepack\Images\bulletCount\%1.paa", round((_magAmmoCounts select _n)/(_magAmmoCaps select _n)*30)]];
+		((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl 1500) lbSetPicture [_n, format ["Modules\outlw_magRepack\Images\bulletCount\%1.paa", round((_magAmmoCounts select _n)/(_magAmmoCaps select _n)*30)]];
 		((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl 1500)	lbsetpicturecolor [_n,[1,1,1,1]];
 		((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl 1500)	lbsetpicturecolorSelected [_n,[1,1,1,1]];
 
