@@ -13,15 +13,12 @@ waitUntil { sleep 10;  (count list mainMissionTreshold) < 9;};
 _AOMarker setMarkerAlpha 0.25;
 _AOMarker setMarkerColor "colorGreen";
 
+//TODO Task Complete
+
 sleep 10;
-
-[] call IA_fnc_newMainAO;
-
-sleep 30;
-//TODO: Fix This delete bit
 {
 	_x setDamage 1;	
 } forEach list mainMissionTreshold;
 deleteVehicle mainMissionTreshold;
 
-//TODO: Body and Wreck cleanup Set in Description.ext?
+[] spawn IA_fnc_newMainAO;

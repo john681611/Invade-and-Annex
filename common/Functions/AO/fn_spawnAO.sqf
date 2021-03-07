@@ -1,5 +1,4 @@
-params ["_AOMarker","_AOConfig"];
-private _faction = "OPF_F";
+params ["_AOMarker","_AOConfig", "_faction"];
 private _spawnedUnits = [];
 private _AOPos = getMarkerPos _AOMarker;
 private _AORad = (getMarkerSize _AOMarker) select 0;

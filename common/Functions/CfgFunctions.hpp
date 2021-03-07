@@ -4,14 +4,20 @@ class IA
 	class script
 	{
 		file = "Functions";
-		class getMainAO {};
+		
 		class getUnits {};
 		class getUnitsFromConfigGroup {};
 		class spawnUnit {};
 		class spawnVehicle {};
 		class spawnGroup {};
-		class spawnAO {};
 		class addToAllCurators {};
+	};
+
+	class AO 
+	{
+		file = "Functions\AO";
+		class getMainAO {};
+		class spawnAO {};
 		class setupMainAOTrig {};
 		class newMainAO;
 	};
@@ -26,6 +32,17 @@ class CBAEXT
 		class taskDefend {};
 		class taskPatrol{};
 		class addWaypoint{};
+
+	};
+};
+
+class SEC
+{
+	tag = "SEC";
+	class script
+	{
+		file = "Functions\AO\Secondary";
+		class officer {};
 
 	};
 };

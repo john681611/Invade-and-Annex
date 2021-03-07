@@ -47,6 +47,12 @@ private _unitMap = createHashMapFromArray [
 			(configFile >> "CfgGroups" >> "East" >> "OPF_F" >> "SpecOps" >> "OI_ViperTeam"),.2
 			]
 		],
+		["officer", [
+			"O_officer_F",.1,
+			"O_Officer_Parade_F",.1,
+			"O_Officer_Parade_Veteran_F",.1
+			]
+		],
 		["helis",[
 			"O_Heli_Attack_02_dynamicLoadout_F",.1,
 			"O_T_VTOL_02_infantry_dynamicLoadout_F",.3,
