@@ -5,13 +5,15 @@ class IA
 	{
 		file = "Functions";
 		class getMainAO {};
-		class getUnits{};
-		class getUnitsFromConfigGroup{};
+		class getUnits {};
+		class getUnitsFromConfigGroup {};
 		class spawnUnit {};
 		class spawnVehicle {};
 		class spawnGroup {};
 		class spawnAO {};
 		class addToAllCurators {};
+		class setupMainAOTrig {};
+		class newMainAO;
 	};
 };
 
