@@ -11,15 +11,17 @@ class IA
 		class spawnVehicle {};
 		class spawnGroup {};
 		class addToAllCurators {};
+		class spawnForce{};
 	};
 
 	class AO 
 	{
 		file = "Functions\AO";
 		class getMainAO {};
-		class spawnAO {};
+		class getSideAO{};
 		class setupMainAOTrig {};
-		class newMainAO;
+		class newMainAO{};
+		class newSideAO{};
 	};
 };
 
@@ -42,6 +44,17 @@ class SEC
 	class script
 	{
 		file = "Functions\AO\Secondary";
+		class officer {};
+
+	};
+};
+
+class SIDE
+{
+	tag = "SIDE";
+	class script
+	{
+		file = "Functions\AO\Side";
 		class officer {};
 
 	};
