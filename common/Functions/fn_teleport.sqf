@@ -6,7 +6,7 @@ to_Base =
 private ["_Location"];
     _Location = _this select 0;
     _unit = player;
-    _unit setpos (_Location findEmptyPosition [0,80, "Man"]);
+    _unit setVehiclePosition [_Location, [], 0, "NONE"];
     _unit allowDamage false;
     sleep 5;
     _unit allowDamage true;

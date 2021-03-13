@@ -1,1 +1,1 @@
-blacklistLocations = [""];
+blacklistLocations = ["Molos Airfield"];
