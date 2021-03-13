@@ -60,7 +60,6 @@ class SEC
 	{
 		file = "Functions\AO\Secondary";
 		class officer {};
-
 	};
 };
 

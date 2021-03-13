@@ -76,37 +76,37 @@ _towns = _towns;
       case "VegetationFir";
       case "Hill":
       {
-        _m setMarkerSize [200,200];
+        _m setMarkerSize [500,500];
       };
 
       case "NameLocal":
       {
-        _m setMarkerSize [250,250];
+        _m setMarkerSize [550,550];
       };
       case "NameVillage":
       {
-        _m setMarkerSize [350,350];
+        _m setMarkerSize [650,650];
       };
       case "NameCity":
       {
-        _m setMarkerSize [400,400];
+        _m setMarkerSize [700,700];
       };
       case "Airport":{
-        _m setMarkerSize [450,450];
+        _m setMarkerSize [750,750];
       };
       case "NameCityCapital":
       {
-        _m setMarkerSize [500,500];
+        _m setMarkerSize [800,800];
       };
       default {
-      _m setMarkerSize [400,400];
+      _m setMarkerSize [700,700];
       };
     };
 
 
     _m setMarkerShape "ELLIPSE";
     _m setMarkerBrush "Solid";
-    _m setMarkerAlpha 0.2;
+    _m setMarkerAlpha 0.0;
     _m setMarkerText (_x select 2);
 } forEach _towns;
 
