@@ -12,6 +12,7 @@ class IA
 		class spawnGroup {};
 		class addToAllCurators {};
 		class spawnForce{};
+		class enableFOB{};
 	};
 
 	class AO 
