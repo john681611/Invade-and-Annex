@@ -13,6 +13,8 @@ class IA
 		class addToAllCurators {};
 		class spawnForce{};
 		class enableFOB{};
+		class teleport{};
+		class teleport_add_action{};
 	};
 
 	class AO 
