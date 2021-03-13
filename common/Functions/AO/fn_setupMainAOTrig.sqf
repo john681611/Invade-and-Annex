@@ -1,14 +1,14 @@
 params ["_AOMarker"];
 
 private _radi = ((getMarkerSize _AOMarker) select 0) + 20;
-mainMissionTreshold = createTrigger ["EmptyDetector", getMarkerPos _AOMarker];
-mainMissionTreshold setTriggerArea [_radi, _radi, 0, false];
-mainMissionTreshold setTriggerActivation ["EAST", "PRESENT", false];
-mainMissionTreshold setTriggerStatements ["this","",""];
+private _mainMissionTreshold = createTrigger ["EmptyDetector", getMarkerPos _AOMarker];
+_mainMissionTreshold setTriggerArea [_radi, _radi, 0, false];
+_mainMissionTreshold setTriggerActivation ["EAST", "PRESENT", false];
+_mainMissionTreshold setTriggerStatements ["this","",""];
 
 
 //TODO Side Triggers?
-waitUntil { sleep 10;  (count list mainMissionTreshold) < 9;};
+waitUntil { sleep 10;  (count list _mainMissionTreshold) < 9;};
 
 _AOMarker setMarkerAlpha 0.25;
 _AOMarker setMarkerColor "colorGreen";
@@ -18,7 +18,7 @@ _AOMarker setMarkerColor "colorGreen";
 sleep 10;
 {
 	_x setDamage 1;	
-} forEach list mainMissionTreshold;
-deleteVehicle mainMissionTreshold;
+} forEach list _mainMissionTreshold;
+deleteVehicle _mainMissionTreshold;
 
 [] spawn IA_fnc_newMainAO;
