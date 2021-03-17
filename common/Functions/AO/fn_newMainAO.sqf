@@ -6,7 +6,7 @@ private _AOMark = [] call IA_fnc_getMainAO;
 private _faction = "OPF_F";
 
 //TODO Generate more dynamic config;
-private _forceConfig = createHashMapFromArray [["mainGroup", 5], ["Car", 3], ["turret", 2]];
+private _forceConfig = [] call IA_fnc_getMainAOForceConfig;
 //TODO SEE if as laggy on server
 //[AOTable, _AOMark, 30, .95, true] spawn BT_fnc_createTable;
 [_AOMark, _forceConfig, _faction] spawn IA_fnc_spawnForce;

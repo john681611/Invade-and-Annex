@@ -5,14 +5,14 @@ class IA
 	{
 		file = "Functions";
 		
+		class addToAllCurators {};
+		class enableFOB{};
 		class getUnits {};
 		class getUnitsFromConfigGroup {};
+		class spawnForce{};
+		class spawnGroup {};
 		class spawnUnit {};
 		class spawnVehicle {};
-		class spawnGroup {};
-		class addToAllCurators {};
-		class spawnForce{};
-		class enableFOB{};
 		class teleport{};
 		class teleport_add_action{};
 	};
@@ -21,10 +21,11 @@ class IA
 	{
 		file = "Functions\AO";
 		class getMainAO {};
+		class getMainAOForceConfig{};
 		class getSideAO{};
-		class setupMainAOTrig {};
 		class newMainAO{};
 		class newSideAO{};
+		class setupMainAOTrig {};
 	};
 };
 
@@ -34,9 +35,9 @@ class CBAEXT
 	class script
 	{
 		file = "Functions\CBAEXT";
+		class addWaypoint{};
 		class taskDefend {};
 		class taskPatrol{};
-		class addWaypoint{};
 
 	};
 };
@@ -48,8 +49,8 @@ class BT
 	{
 		file = "Functions\Briefingtable";
 		class clearTable {};
-		class createTable {};
 		class createBlock {};
+		class createTable {};
 	};
 };
 
