@@ -2,10 +2,10 @@
 #include "Modules\outlw_magRepack\MagRepack_config.hpp"
 #include "Modules\CHVD\dialog.hpp"
 briefingName = "Invade & Annex V64.1";
-onLoadName = "Invade & Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
-overviewText = "Invade & Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
+onLoadName = "Invade & Annex V64.1";
+overviewText = "Invade and Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
 author = "INF_Mike64 Inspired by Ahoy World ";
-onLoadMission = "Invade & Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
+onLoadMission = "Invade and Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
 loadScreen = "ingame_logo.paa";
 disabledAI = 1;
 enableDebugConsole = 1;
@@ -50,6 +50,13 @@ class CfgFunctions
 
 class Params
 {
+	class NEWGAME
+	{
+		title = "New Game - WARNING all progress will be lost!"; 
+		values[] = {false,true};
+		texts[] = {"False","True"}; 
+		default = false;
+	};
 	class ReviveMode
 	{
 		title = $STR_A3_ReviveMode;

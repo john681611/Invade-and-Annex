@@ -14,4 +14,4 @@ private _forceConfig = [] call IA_fnc_getMainAOForceConfig;
 [_AOMark, _faction] call (selectRandom [SEC_fnc_officer]);// TODO better select random (from SEC)
 _AOMark call IA_fnc_setupMainAOTrig;
 takenTowns pushBack _AOMark;
-//TODO save takenTowns
+profilenamespace setvariable ["IA_SAVEGAME", takenTowns];

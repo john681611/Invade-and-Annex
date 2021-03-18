@@ -3,7 +3,7 @@ private _selectedTownMarker = "";
 private _remainingTowns = (ztownAll) select {!(_x in takenTowns)};
 if(count _remainingTowns == 0) exitWith {
 	"EveryoneWon" call BIS_fnc_endMissionServer;
-	//TODO Reset and save takenTowns persistance
+	[] call IA_fnc_clearState;
 };
 if(count takenTowns > 0) then {
 	_remainingTowns =  [_remainingTowns, [], { (getMarkerPos (takenTowns select ((count takenTowns) -1))) distance (getMarkerPos _x) }, "ASCEND"] call BIS_fnc_sortBy;
