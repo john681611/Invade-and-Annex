@@ -1,4 +1,5 @@
 # Invade-and-Annex
+![](ingame_logo.png)
 This Is a complete re-write of Ahoy Worlds Invade and Annex 
 
 To build a mission you need Python and run:
