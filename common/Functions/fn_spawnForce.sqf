@@ -3,7 +3,6 @@ private _spawnedUnits = [];
 private _AOPos = getMarkerPos _AOMarker;
 private _AORad = (getMarkerSize _AOMarker) select 0;
 
-systemChat format ["%1, %2", _AOPos, _AORad];
 
 {
 	for "_i" from 1 to (_AOConfig getOrDefault [_X, 0]) do {
