@@ -12,6 +12,7 @@ Parameters:
     _threshold  - minimum building positions required to be considered for garrison <NUMBER> (Default: 3)
     _patrol     - chance for each unit to patrol instead of garrison, true for default, false for 0% <NUMBER, BOOLEAN> (Default: 0.1)
     _hold       - chance for each unit to hold their garrison in combat, true for 100%, false for 0% <NUMBER, BOOLEAN> (Default: 0)
+    _teleport   - teleport units to defend locations (Default: false)
 Returns:
     None
 Examples:
@@ -27,7 +28,8 @@ params [
     ["_radius", 50, [0]],
     ["_threshold", 3, [0]],
     ["_patrol", 0.1, [true, 0]],
-    ["_hold", 0, [true, 0]]
+    ["_hold", 0, [true, 0]],
+    ["_teleport", false]
 ];
 
 // Input validation stuff here
@@ -99,10 +101,12 @@ if (_patrol > 0 && {count _units > 1}) then {
                 };
 
                 // Wait until AI is in position then force them to stay
-                [_x, _pos, _hold] spawn {
-                    params ["_unit", "_pos", "_hold"];
+                [_x, _pos, _hold,_teleport] spawn {
+                    params ["_unit", "_pos", "_hold", "_teleport"];
                     if (surfaceIsWater _pos) exitwith {};
-
+                    if (_teleport) then {
+                        _unit setPos _pos;
+                    };
                     _unit doMove _pos;
                     waituntil {unitReady _unit};
                     if (random 1 < _hold) then {

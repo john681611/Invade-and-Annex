@@ -6,10 +6,12 @@ class IA
 		file = "Functions";
 		
 		class addToAllCurators {};
+		class removeToAllCurators {};
 		class clearState{};
 		class enableFOB{};
 		class getUnits {};
 		class getUnitsFromConfigGroup {};
+		class retreatToNextAO{};
 		class spawnForce{};
 		class spawnGroup {};
 		class spawnUnit {};
@@ -28,6 +30,12 @@ class IA
 		class newSideAO{};
 		class setupMainAOTrig {};
 	};
+
+	class PLAYER
+	{
+		file = "Functions\player";
+		class runMarker{};
+	}
 };
 
 class CBAEXT

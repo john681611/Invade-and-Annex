@@ -10,7 +10,7 @@ private _forceConfig = createHashMapFromArray [["mainGroup", 2], ["Car", 2], ["t
 
 [west, [format["%1-officer",_AOMark], format["%1-main",_AOMark]], ["Take Our High Ranking Officer", "Side: Kill Officer"], (getPos _veh) ,1, 2, true, "kill"] call BIS_fnc_taskCreate;
 
-waitUntil { sleep 10;  !alive _veh};
+waitUntil { sleep 5;  !alive _veh};
 
 [format["%1-officer",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
 

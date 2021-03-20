@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5131.8428,69.388542,12410.112};
+		pos[]={5236.2285,111.56808,12318.776};
 		dir[]={-0.66327584,-0.37360322,0.64844882};
 		up[]={-0.26714644,0.92758858,0.26117459};
 		aside[]={0.69906938,0,0.71505386};
@@ -3371,6 +3371,7 @@ class Mission
 				onActivation="""FOB1"" call IA_fnc_enableFOB;";
 				sizeA=250;
 				sizeB=250;
+				sizeC=50;
 				activationBy="ANY";
 				isServerOnly=1;
 			};
@@ -4949,6 +4950,7 @@ class Mission
 				onActivation="""FOB2"" call IA_fnc_enableFOB;";
 				sizeA=250;
 				sizeB=250;
+				sizeC=50;
 				activationBy="ANY";
 				isServerOnly=1;
 			};
@@ -5483,6 +5485,7 @@ class Mission
 				onActivation="""FOB3"" call IA_fnc_enableFOB;";
 				sizeA=250;
 				sizeB=250;
+				sizeC=50;
 				activationBy="ANY";
 				isServerOnly=1;
 			};
@@ -5886,6 +5889,7 @@ class Mission
 				onActivation="""FOB4"" call IA_fnc_enableFOB;";
 				sizeA=250;
 				sizeB=250;
+				sizeC=50;
 				activationBy="ANY";
 				isServerOnly=1;
 			};
@@ -6305,6 +6309,7 @@ class Mission
 				onActivation="""FOB5"" call IA_fnc_enableFOB;";
 				sizeA=250;
 				sizeB=250;
+				sizeC=50;
 				activationBy="ANY";
 				isServerOnly=1;
 			};
