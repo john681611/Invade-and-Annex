@@ -70,6 +70,11 @@ class SEC
 	{
 		file = "Functions\AO\Secondary";
 		class officer {};
+		class cache {};
+		class ewDestroy {};
+		class hq {};
+		class radioTower {};
+		class vehicles {};
 	};
 };
 

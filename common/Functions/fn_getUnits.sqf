@@ -12,6 +12,7 @@ private _unitMap = createHashMapFromArray [
 			]
 		],
 		["AAA",["O_APC_Tracked_02_AA_F",1]],
+		["Arty",["O_MBT_02_arty_F",1]],
 		["IFV",[
 			"O_APC_Wheeled_02_rcws_F",.5,
 			"O_APC_Tracked_02_cannon_F",.5
