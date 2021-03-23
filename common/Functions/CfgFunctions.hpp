@@ -75,6 +75,7 @@ class SEC
 		class hq {};
 		class radioTower {};
 		class vehicles {};
+		class minefield{};
 	};
 };
 
@@ -88,3 +89,13 @@ class SIDE
 
 	};
 };
+
+class COMP
+{
+	tag = "COMP"
+	class script
+	{
+		file = "Compositions";
+		class minefield{}
+	}
+}
