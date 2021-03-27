@@ -11,6 +11,7 @@ class IA
 		class enableFOB{};
 		class getUnits {};
 		class getUnitsFromConfigGroup {};
+		class hideInBuilding {};
 		class retreatToNextAO{};
 		class spawnForce{};
 		class spawnGroup {};

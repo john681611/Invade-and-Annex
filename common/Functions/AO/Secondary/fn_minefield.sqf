@@ -11,14 +11,14 @@ private _mineOptions = ["APERSBoundingMine",
 private _AOpos = getMarkerPos _AOMarker;
 private _radiusSize = (getMarkerSize _AOMarker) select 0;
 private _randomPos = [_AOpos, 0, _radiusSize, 5, 0, 0.4, 0, [], _AOpos] call BIS_fnc_findSafePos;
-private _veh = createMine [_mineOptions selectRandom, _randomPos, [], 0];
+private _veh = createMine [selectRandom _mineOptions, _randomPos, [], 0];
 _spawnedUnits = [getpos _veh, random 360, call COMP_fnc_minefield] call BIS_fnc_ObjectsMapper;
 _spawnedUnits pushBack _veh;
 _mines pushBack _veh;
 
 for "_i" from 1 to (random 10) do {
 	private _randomMinePos = [getPos _veh, 0, 25, 5, 0, 0.4, 0, [], _AOpos] call BIS_fnc_findSafePos;
-	private _mine = createMine [_mineOptions selectRandom, _randomMinePos, [], 0];
+	private _mine = createMine [selectRandom _mineOptions, _randomMinePos, [], 0];
 	_mines pushBack _mine;
 	_spawnedUnits pushBack _mine;
 };
