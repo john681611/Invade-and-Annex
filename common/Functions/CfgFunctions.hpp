@@ -26,6 +26,7 @@ class IA
 		file = "Functions\AO";
 		class getMainAO {};
 		class getMainAOForceConfig{};
+		class getSideAOForceConfig{};
 		class getSideAO{};
 		class newMainAO{};
 		class newSideAO{};
@@ -80,17 +81,6 @@ class SEC
 		class freeHostages{};
 		class capOfficer{};
 		class savePilot{};
-	};
-};
-
-class SIDE
-{
-	tag = "SIDE";
-	class script
-	{
-		file = "Functions\AO\Side";
-		class officer {};
-
 	};
 };
 

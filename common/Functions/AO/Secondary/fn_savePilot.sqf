@@ -12,7 +12,7 @@ private _wreck = [_AOMarker,selectRandom [
 	"Land_Wreck_Heli_02_Wreck_01_F"
 ]] call IA_fnc_spawnVehicle;
 private _localMarker = createMarker ["side", getPos _wreck];
-_localMarker setMarkerSize [50,50];
+_localMarker setMarkerSize [20,20];
 _localMarker setMarkerShape "ELLIPSE";
 _localMarker setMarkerBrush "Border";
 _localMarker setMarkerColor "ColorRed";
