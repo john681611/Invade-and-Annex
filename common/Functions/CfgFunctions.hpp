@@ -77,6 +77,9 @@ class SEC
 		class radioTower {};
 		class vehicles {};
 		class minefield{};
+		class freeHostages{};
+		class capOfficer{};
+		class savePilot{};
 	};
 };
 
