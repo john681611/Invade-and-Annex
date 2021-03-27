@@ -7,7 +7,7 @@ _mainMissionTreshold setTriggerActivation ["EAST", "PRESENT", false];
 _mainMissionTreshold setTriggerStatements ["this","",""];
 
 
-//TODO Side Triggers?
+
 waitUntil { sleep 5;  (count list _mainMissionTreshold) < 9;};
 
 _AOMarker setMarkerAlpha 0.25;

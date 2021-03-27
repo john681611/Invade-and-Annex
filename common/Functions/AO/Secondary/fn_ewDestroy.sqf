@@ -7,7 +7,7 @@ private _veh = [_AOMarker, selectRandom ["Land_Device_slingloadable_F","Land_Dev
 
 [west, [format["%1-ewd",_AOMark], format["%1-main",_AOMark]], ["Destroy East Wind Device", "Destroy EWD"], (getPos _veh) ,1, 2, true, "destroy"] call BIS_fnc_taskCreate;
 
-//TODO Trigger Earthquakes if players are nearby?
+[2] remoteExec ["BIS_fnc_earthquake", 2];
 
 waitUntil { sleep 5;  !alive _veh};
 

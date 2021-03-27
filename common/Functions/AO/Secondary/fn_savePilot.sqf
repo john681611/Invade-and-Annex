@@ -6,7 +6,7 @@ private _unitList = [
 	"B_T_Helipilot_F",
 	"B_T_Pilot_F",
 	"B_W_Helipilot_F"
-]; //TODO move to getUnit
+];
 private _wreck = [_AOMarker,selectRandom [
 	"Land_Wreck_Heli_Attack_01_F",
 	"Land_Wreck_Heli_02_Wreck_01_F"

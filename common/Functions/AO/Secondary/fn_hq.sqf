@@ -11,7 +11,7 @@ _localMarker setMarkerShape "ELLIPSE";
 _localMarker setMarkerBrush "Border";
 _localMarker setMarkerColor "ColorRed";
 intelFoundCount = 0;
-//TODO Add intel to find in the in the in
+
 private _intelOptions =  ["Intel_File1_F",
 "Leaflet_05_F",
 "Leaflet_05_New_F",
