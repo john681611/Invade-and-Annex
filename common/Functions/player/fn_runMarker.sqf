@@ -7,7 +7,7 @@ call {while {true} do
         {
           if ((vehicle player) != player) then {
             if ((getMarkerColor (format ["%1_marker",(vehicle player)])) =="") then {
-              (vehicle player) remoteExec ["vehicleMarker", 2, false];
+              (vehicle player) remoteExec ["IA_fnc_vehicleMarker", 2, false];
             };
             _marker setMarkerText "";
           } else {

@@ -37,6 +37,7 @@ class IA
 	{
 		file = "Functions\player";
 		class runMarker{};
+		class vehicleMarker{};
 	}
 };
 
