@@ -36,7 +36,6 @@ private _directed_groups = [];
 				_x enableAI "PATH";
 				_x doMove  (getpos (leader _group));
 			} forEach units _group;
-			systemChat format["%1",_group];
 			private _waypoint = _group addWaypoint [_AOPos, 50];
 			_waypoint setWaypointType "MOVE";
 			_waypoint setWaypointBehaviour "SAFE";

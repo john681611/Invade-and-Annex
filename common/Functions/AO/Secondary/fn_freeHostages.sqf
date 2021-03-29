@@ -15,7 +15,7 @@ removeallweapons _veh;
 _veh setcaptive true;
 _veh disableAI "ALL";
 _veh switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop";
-_veh addAction ["Rescue", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"];
+[_veh, ["Rescue", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"]] remoteExec ["addAction",0,true];
 [getMarkerPos _AOMarker, ((getMarkerSize _AOMarker) select 0), [_veh]] call IA_fnc_hideInBuilding;
 
 private _spawnedUnits = [_veh];

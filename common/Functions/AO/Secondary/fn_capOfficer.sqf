@@ -4,7 +4,7 @@ params ["_AOMarker", "_faction"];
 private _veh = [_AOMarker,([_faction, "officer"] call IA_fnc_getUnits)] call IA_fnc_spawnUnit;
 removeallweapons _veh;
 _veh setcaptive true;
-_veh addAction ["Capture", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"];
+[_veh,["Capture", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"]] remoteExec ["addAction",0,true];
 
 [getMarkerPos _AOMarker, ((getMarkerSize _AOMarker) select 0), [_veh]] call IA_fnc_hideInBuilding;
 private _spawnedUnits = [_veh];

@@ -23,7 +23,7 @@ removeallweapons _pilot;
 _pilot setcaptive true;
 _pilot disableAI "ALL";
 _pilot switchMove "AinjPpneMstpSnonWrflDnon";
-_pilot addAction ["Rescue", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"];
+[_pilot, ["Rescue", "(_this select 0) switchmove """"; (_this select 0) enableAI ""all""; [(_this select 0)] join group player;"]] remoteExec ["addAction",0,true];
 [[_pilot, _kia, _wreck]] remoteExec ["IA_fnc_addToAllCurators", 2];
 
 [west, [format["%1-pilot",_AOMark], format["%1-main",_AOMark]], ["Rescue Downed Pilot", "Rescue Downed Pilot"], (getPos _pilot) ,1, 2, true, "heal"] call BIS_fnc_taskCreate;
