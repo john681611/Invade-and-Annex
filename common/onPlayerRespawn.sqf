@@ -17,3 +17,5 @@ _player addEventHandler ["HandleDamage", {
 
   _damage - _newDamage * 0.75
 }];
+
+player setUnitLoadout (player getVariable ["Saved_Loadout",[]]);
