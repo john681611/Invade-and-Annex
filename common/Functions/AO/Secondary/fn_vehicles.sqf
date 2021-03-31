@@ -13,3 +13,5 @@ for "_i" from 1 to (random 3) do {
 waitUntil { sleep 5;  {alive _x} count _spawnedUnits == 0};
 
 [format["%1-veh",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedUnits

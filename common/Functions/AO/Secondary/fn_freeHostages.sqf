@@ -36,3 +36,5 @@ if(!alive _veh) then {
 	[format["%1-freeHostage",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
 };
 deleteVehicle _veh;
+
+_spawnedUnits

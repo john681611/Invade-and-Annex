@@ -27,3 +27,4 @@ if(!alive _veh) then {
 };
 deleteVehicle _veh;
 
+_spawnedUnits

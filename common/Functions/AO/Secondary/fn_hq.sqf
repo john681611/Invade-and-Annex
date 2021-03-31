@@ -51,3 +51,5 @@ waitUntil { sleep 5;  intelFoundCount == count _spawnedIntel};
 deleteMarker _localMarker;
 
 [format["%1-hq",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedIntel

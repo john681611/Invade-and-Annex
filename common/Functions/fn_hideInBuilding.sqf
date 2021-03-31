@@ -13,6 +13,7 @@ _buildings = _buildings select {
 	count (_positions) >= 1
 };
 {
+	if(count _buildings == 0) exitWith{};
 	private _building = selectRandom _buildings;
 	private _array = _building getVariable ["CBA_taskDefend_positions", []];
 	private _pos = _array deleteAt (floor (random (count _array)));

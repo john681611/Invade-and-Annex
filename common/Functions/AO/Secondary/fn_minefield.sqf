@@ -29,3 +29,5 @@ for "_i" from 1 to (random 10) do {
 waitUntil { sleep 5; {alive _x} count _mines == 0};
 
 [format["%1-mines",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedUnits

@@ -11,3 +11,5 @@ private _veh = [_AOMarker, selectRandom ["Land_Communication_F","Land_TTowerBig_
 waitUntil { sleep 5;  !alive _veh};
 
 [format["%1-tower",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedUnits

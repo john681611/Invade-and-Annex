@@ -11,7 +11,7 @@ if({ alive _x && (side _x) == east } count allUnits > 500) then {
 
 private _survivors = [];
 {
-	if(alive _x) then {
+	if(alive _x and (side _x) == east) then {
 		if((_AOPos distance _x) > 3000) then {
 			deleteVehicle _x;
 		} else {
@@ -19,6 +19,7 @@ private _survivors = [];
 		};
 	} else {
 		[_x] join grpNull;
+		deleteVehicle _x;
 	};
 	
 } forEach _units;

@@ -1,11 +1,11 @@
 
 #include "Modules\outlw_magRepack\MagRepack_config.hpp"
 #include "Modules\CHVD\dialog.hpp"
-briefingName = "Invade & Annex V64.1";
-onLoadName = "Invade & Annex V64.1";
-overviewText = "Invade and Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
+briefingName = "Invade & Annex V64.2";
+onLoadName = "Invade & Annex V64.2";
+overviewText = "Invade and Annex V64.2  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
 author = "INF_Mike64 Inspired by Ahoy World ";
-onLoadMission = "Invade and Annex V64.1  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
+onLoadMission = "Invade and Annex V64.2  Join us on Teamspeak: ts3.iron-fists.co.uk or visit us at iron-fists.co.uk";
 loadScreen = "ingame_logo.paa";
 disabledAI = 1;
 enableDebugConsole = 1;

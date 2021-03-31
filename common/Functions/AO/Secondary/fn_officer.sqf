@@ -10,3 +10,5 @@ private _veh = [_AOMarker,([_faction, "officer"] call IA_fnc_getUnits)] call IA_
 waitUntil { sleep 5;  !alive _veh};
 
 [format["%1-officer",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedUnits

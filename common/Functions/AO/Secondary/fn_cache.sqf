@@ -19,3 +19,5 @@ waitUntil { sleep 5;  !alive _veh};
 "Bo_GBU12_LGB" createVehicle getPos _veh;
 
 [format["%1-cache",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedIntel

@@ -10,6 +10,8 @@ When Secondary objective is complete use something like this:
 
     waitUntil { sleep 10;  (count list mainMissionTreshold) < 9;};
 
+ Should return any _spawnedUnits so they can be cleaned up by AO management
+
 ## Spawning
 
 * Don't write your own custom spawning functions use the ones given.

@@ -12,3 +12,5 @@ private _veh = [_AOMarker, selectRandom ["Land_Device_slingloadable_F","Land_Dev
 waitUntil { sleep 5;  !alive _veh};
 
 [format["%1-ewd",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
+
+_spawnedUnits

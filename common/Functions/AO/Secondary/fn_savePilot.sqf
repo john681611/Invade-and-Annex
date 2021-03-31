@@ -37,3 +37,5 @@ if(!alive _pilot) then {
 };
 deleteMarker _localMarker;
 deleteVehicle _pilot;
+
+_spawnedUnits
