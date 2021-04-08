@@ -54,18 +54,6 @@ class CBAEXT
 	};
 };
 
-class BT
-{
-	tag = "BT";
-	class script
-	{
-		file = "Functions\Briefingtable";
-		class clearTable {};
-		class createBlock {};
-		class createTable {};
-	};
-};
-
 class SEC
 {
 	tag = "SEC";

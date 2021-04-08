@@ -11,3 +11,4 @@ sideMissions = [
 	SEC_fnc_capOfficer,
 	SEC_fnc_savePilot
 	];
+factions = ["OPF_F"];
