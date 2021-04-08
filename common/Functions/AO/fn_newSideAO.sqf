@@ -5,18 +5,7 @@ private _faction = "OPF_F";
 [west, [format["%1-main",_AOMark]], ["Special Mission", "Special Mission"], (getMarkerPos _AOMark) ,1, 2, true, "attack"] call BIS_fnc_taskCreate;
 private _forceConfig = [] call IA_fnc_getSideAOForceConfig;
 private _spawnedUnits = [_AOMark, _forceConfig, _faction] call IA_fnc_spawnForce;
-_spawnedUnits = _spawnedUnits + ([_AOMark, _faction] call (selectRandom [
-	SEC_fnc_officer,
-	SEC_fnc_cache,
-	SEC_fnc_ewDestroy,
-	SEC_fnc_hq,
-	SEC_fnc_radioTower,
-	SEC_fnc_vehicles,
-	SEC_fnc_minefield,
-	SEC_fnc_freeHostages,
-	SEC_fnc_capOfficer,
-	SEC_fnc_savePilot
-	]));
+_spawnedUnits = _spawnedUnits + ([_AOMark, _faction] call (selectRandom sideMissions));
 
 [format["%1-main",_AOMark],"SUCCEEDED"] call BIS_fnc_taskSetState;
 sleep 300;
