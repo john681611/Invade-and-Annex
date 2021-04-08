@@ -12,3 +12,5 @@ sideMissions = [
 	SEC_fnc_savePilot
 	];
 factions = ["OPF_F"];
+customUnitConfig = [];
+

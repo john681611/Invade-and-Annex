@@ -3,7 +3,7 @@ params ["_faction", "_type"];
 
 // Call ([_faction, _type] call AW_fnc_getUnits)
 // Format Faction Hash => Type Hash => Unit/Group Array
-private _unitMap = createHashMapFromArray [
+private _unitMap = createHashMapFromArray ([
 	["OPF_F", createHashMapFromArray [
 		["MBT",[
 			"O_MBT_02_cannon_F",.2,
@@ -89,7 +89,7 @@ private _unitMap = createHashMapFromArray [
 		]]
 		]
 	]
-];
+] + customUnitConfig);
 
 
 ((_unitMap get _faction) get _type) call BIS_fnc_selectRandomWeighted;
